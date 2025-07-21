@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Towhid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #000;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+      animation: fadeIn 1.5s ease;
+    }
+    .profile-image {
+      width: 320px;
+      max-width: 90vw;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(255, 255, 255, 0.1);
+      margin-bottom: 1.5rem;
+      animation: popIn 1.2s ease;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      animation: fadeInUp 2s ease;
+    }
+    p {
+      font-size: 1.25rem;
+      color: #bbb;
+      animation: fadeInUp 2.2s ease;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2.5rem;
+      animation: fadeInUp 2.5s ease;
+    }
+    .link-button {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 999px;
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+    .link-button:hover {
+      background-color: #333;
+      transform: translateY(-3px);
+    }
+    .link-button img {
+      width: 24px;
+      height: 24px;
+    }
+    footer {
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: #666;
+      animation: fadeIn 3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .link-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.95rem;
+      }
+      .profile-image {
+        width: 240px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="DSC00506.jpg" alt="Towhid" class="profile-image">
+    <h1>Towhid</h1>
+    <p>Ideas. Discipline. Growth.</p>
+  </header>
+
+  <div class="links">
+    <a class="link-button" href="https://www.facebook.com/ltstowhid/" target="_blank">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook">
+      @1tstowhid
+    </a>
+    <a class="link-button" href="https://www.instagram.com/1tstowhid/" target="_blank">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram">
+      @1tstowhid
+    </a>
+    <a class="link-button" href="https://www.youtube.com/@1tsTowhid.B" target="_blank">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube">
+      @1tsTowhid.B
+    </a>
+  </div>
+
+  <footer>
+    &copy; 2025 Towhid. All rights reserved.
+  </footer>
+</body>
+</html>
